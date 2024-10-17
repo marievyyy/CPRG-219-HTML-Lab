@@ -35,6 +35,10 @@ header {
    border-right: 0.5px solid #A4997B;
 }
 
+.logo img {
+   width: 55%;
+}
+
 nav {
    flex: 1;
    text-align: right;
@@ -74,7 +78,16 @@ h1 a {
    text-decoration: none;
 }
 
-section.page-hero {
+ul,
+ol {
+   padding: 0;
+   list-style: none;
+}
+
+section.page-hero,
+section.about-page,
+section.projects-page,
+section.contact-page {
    display: flex;
    flex-wrap: nowrap;
    justify-content: flex-end;
@@ -84,6 +97,8 @@ section.page-hero {
    border-bottom: 0.5px solid #A4997B;
 }
 
+
+/* ------ HOME ------ */
 .page-hero-header,
 .page-hero-content {
    display: flex;
@@ -101,6 +116,7 @@ section.page-hero {
 
 .page-hero-content {
    flex: 0 0 340px;
+   color: #534D3F;
    border-right: 0.5px solid #A4997B;
 }
 
@@ -133,19 +149,248 @@ section.page-hero {
    margin-top: 30px;
 }
 
-a.button {
+a.button,
+.button {
    color: #fff;
    text-decoration: none;
    margin: 0;
    border: 0;
-   padding: 5px 25px;
+   padding: 6px 25px;
+   border: 1px solid #D8BC8C;
    background-color: #D8BC8C;
    border-radius: 2rem;
    font-family: inherit;
    font-weight: 300;
    font-size: 0.9rem;
+   transition: all 0.3s ease-in;
+}
+
+a.button:hover {
+   background-color: transparent;
+   color: #534D3F;
 }
 
 a.button+a.button {
    margin-left: 5px;
+}
+
+/* ------ ABOUT ------ */
+section.about-page {
+   gap: 0;
+}
+
+.about-page-content,
+.about-page-skills {
+   padding: 20px;
+}
+
+.about-page-content {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.about-page-content p:first-of-type,
+.about-page-skills h2 {
+   padding-top: 3rem;
+}
+
+.about-page-content p {
+   color: #534D3F;
+   font-size: 1.125rem;
+   font-weight: 400;
+   letter-spacing: -0.2px;
+   margin-bottom: 20px;
+   max-width: 600px;
+}
+
+.about-page-content p+p {
+   font-size: 1em;
+   font-weight: 330;
+   margin-left: auto;
+   max-width: 300px;
+   text-align: right;
+}
+
+.about-page-skills {
+   flex: 0 0 450px;
+   border-left: 0.5px solid #A4997B;
+}
+
+.about-page-skills .skills-lists {
+   margin-bottom: 3em;
+}
+
+.about-page-skills h2 {
+   color: #E9E5D9;
+   font-family: inherit;
+   font-size: 2em;
+   margin-bottom: 20px;
+   text-transform: uppercase;
+   word-break: break-word;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #1F1305;
+}
+
+.about-page-skills h2 span {
+   color: #1F1305;
+   margin-right: 5px;
+   font-family: "Kalnia", serif;
+   font-weight: 600;
+   text-transform: uppercase;
+}
+
+.skills-lists ul {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px 7px;
+}
+
+/* ------ PROJECTS ------ */
+
+section.projects-page {
+   flex-direction: column;
+   justify-content: flex-start;
+   height: auto;
+}
+
+.projects-page-header h2 {
+   font-family: "Kalnia", serif;
+   font-weight: 700;
+   text-transform: uppercase;
+   font-size: 5em;
+   color: #1F1305;
+   line-height: 0.85;
+   max-width: 700px;
+   margin-bottom: 30px;
+}
+
+.projects-page-content {
+   display: flex;
+}
+
+table.projects {
+   flex: 1;
+   margin-inline: auto;
+   table-layout: fixed;
+   width: 100%;
+   padding: 20px;
+}
+
+table.projects td {
+   padding-inline: 10px;
+}
+
+table.projects img {
+   border: 0.5px solid #534D3F;
+   border-radius: 5px;
+   padding: 10px;
+   margin-bottom: 20px;
+   width: 100%;
+}
+
+table.projects td div.project-title {
+   font-weight: 700;
+   text-transform: uppercase;
+   font-size: 1.6em;
+   color: #1F1305;
+   line-height: 0.85;
+   max-width: 700px;
+   margin-bottom: 25px;
+}
+
+table.projects td div.project-details {
+   margin-bottom: 40px;
+}
+
+.projects-process {
+   flex: 0 0 520px;
+   margin-inline: auto;
+   max-width: 1180px;
+   padding: 20px;
+   border-left: 0.5px solid #A4997B;
+}
+
+.projects-process h3 {
+   color: #E9E5D9;
+   font-family: inherit;
+   font-size: 2.4em;
+   line-height: 1;
+   margin-bottom: 20px;
+   text-transform: uppercase;
+   word-break: break-word;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #1F1305;
+}
+
+.projects-process ol li {
+   margin-bottom: 8px;
+   text-transform: uppercase;
+   color: #534D3F;
+}
+
+.projects-process ol li span {
+   display: block;
+   text-transform: none;
+   color: #1F1305;
+}
+
+/* ------ CONTACT ------ */
+section.contact-page {
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-top: 3rem;
+}
+
+.contact-page-header {
+   font-family: "Kalnia", serif;
+   font-weight: 700;
+   text-transform: uppercase;
+   font-size: 4em;
+   color: #1F1305;
+   line-height: 0.85;
+   margin-bottom: 25px;
+}
+
+.contact-content {
+   display: flex;
+   justify-content: space-between;
+   width: 900px;
+   text-align: center;
+}
+
+.contact-content h3 {
+   color: #E9E5D9;
+   font-family: inherit;
+   font-size: 2.4em;
+   line-height: 1;
+   margin-bottom: 20px;
+   text-transform: uppercase;
+   word-break: break-word;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #1F1305;
+}
+
+.contact-content .contact-address a {
+   color: inherit;
+   text-decoration: none;
+   transition: color 0.3s ease;
+}
+
+.contact-content .contact-address a:hover {
+   color: #D8BC8C;
+}
+
+
+.contact-social .social-list {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+}
+
+.contact-social .social-list img {
+   max-width: 25px;
+   height: 25px;
 }

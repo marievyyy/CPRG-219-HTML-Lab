@@ -317,7 +317,7 @@ table.projects td div.project-details {
    font-family: inherit;
    font-size: 2.4em;
    line-height: 1;
-   margin-bottom: 20px;
+   margin-bottom: 30px;
    text-transform: uppercase;
    word-break: break-word;
    -webkit-text-stroke-width: 1px;
@@ -325,7 +325,7 @@ table.projects td div.project-details {
 }
 
 .projects-process ol li {
-   margin-bottom: 8px;
+   margin-bottom: 15px;
    text-transform: uppercase;
    color: #534D3F;
 }

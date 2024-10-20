@@ -61,6 +61,12 @@ nav ul li a {
    padding: 10px 15px 8px;
    text-transform: uppercase;
    text-decoration: none;
+   transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li:active {
+   color: #D8BC8C;
 }
 
 h1 {

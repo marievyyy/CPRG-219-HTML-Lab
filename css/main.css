@@ -153,6 +153,7 @@ section.contact-page {
 
 .page-hero-buttons {
    margin-top: 30px;
+   display: flex;
 }
 
 a.button,
@@ -399,4 +400,149 @@ section.contact-page {
 .contact-social .social-list img {
    max-width: 25px;
    height: 25px;
+}
+
+
+/* ------ Media Queries ------ */
+
+@media (width <=1200px) {
+   .page-hero-header h2 {
+      font-size: 7.3em;
+      letter-spacing: 0.2rem;
+   }
+
+   .page-hero-header h3 {
+      font-size: 3em;
+   }
+}
+
+@media (width <=1024px) {
+
+   .logo,
+   .page-hero-content {
+      flex: 0 0 240px;
+   }
+
+   section.page-hero {
+      gap: 0;
+   }
+
+   .page-hero-header h2 {
+      font-size: 6.8em;
+      letter-spacing: 0.2rem;
+      max-width: 440px;
+   }
+
+   .page-hero-header h3 {
+      font-size: 2.5em;
+      max-width: 600px;
+      margin-right: 0;
+      letter-spacing: 0.8rem;
+   }
+
+   .page-hero-buttons {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+   }
+
+   a.button+a.button {
+      margin-left: 0;
+   }
+}
+
+
+/* ipads, tablets 481px - 768px */
+@media (width <=768px) {
+   html {
+      font-size: 14px;
+   }
+
+   header {
+      flex-direction: column;
+      height: auto;
+   }
+
+   .logo {
+      flex: 0 0 auto;
+      height: 100px;
+      border-right: 0;
+   }
+
+   nav {
+      padding-right: 0;
+      width: 100%;
+   }
+
+   nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   nav ul li {
+      padding-block: 8px;
+   }
+
+   nav ul li:last-of-type {
+      padding-bottom: 20px;
+   }
+
+   /* page hero section */
+   section.page-hero {
+      flex-wrap: wrap;
+      height: calc(100vh - 301px);
+   }
+
+   .page-hero-header {
+      order: -1;
+   }
+
+   .page-hero-header h2 {
+      max-width: 440px;
+   }
+
+   .page-hero-header h3 {
+      letter-spacing: 0.3rem;
+      max-width: 450px;
+   }
+
+   .page-hero-content {
+      border-right: 0;
+      flex: 0 0 100%;
+      max-width: 340px;
+      margin-right: auto;
+   }
+
+   .page-hero-buttons {
+      flex-direction: row;
+   }
+}
+
+/* Mobile devices 480px */
+@media (width <=480px) {
+
+   .page-hero-header h2 {
+      font-size: 4.8em;
+      letter-spacing: 0.2rem;
+   }
+
+   .page-hero-header h3 {
+      font-size: 2em;
+   }
+
+}
+
+/* Mobile devices 360px */
+@media (width <=360px) {
+
+   .page-hero-header h2 {
+      font-size: 3.5em;
+      letter-spacing: 0.2rem;
+   }
+
+   .page-hero-header h3 {
+      font-size: 1.8em;
+   }
+
 }

@@ -48,6 +48,7 @@ header {
    justify-content: center;
    align-items: center;
    border-right: 0.5px solid #A4997B;
+   background-image: repeating-linear-gradient(140deg, #D8BC8C 12px, #D8BC8C 13px, transparent 13px, transparent 20px);
 }
 
 .logo img {
@@ -537,6 +538,7 @@ section.contact-page {
       flex: 0 0 auto;
       height: 100px;
       border-right: 0;
+      width: 100%;
    }
 
    nav {

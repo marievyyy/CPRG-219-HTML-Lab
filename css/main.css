@@ -22,7 +22,7 @@ html {
    height: 600%;
    width: 600%;
    animation: grain 7s steps(10) infinite;
-   background-image: url(/images/noise.png);
+   background-image: url(/CPRG-219-HTML-Lab/images/noise.png);
    background-size: 200px;
    background-repeat: repeat;
    opacity: .25;

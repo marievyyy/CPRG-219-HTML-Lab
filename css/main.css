@@ -430,6 +430,33 @@ table.projects td div.project-details {
    color: #1F1305;
 }
 
+/* loop */
+.projects-process ol#numbers {
+   counter-reset: list-counter;
+   list-style: none;
+   padding-left: 10px;
+}
+
+.projects-process ol#numbers li::before {
+   content: counter(list-counter);
+   counter-increment: list-counter;
+   width: 1.2em;
+   height: 1.2em;
+   padding: .5em;
+   margin-right: 1em;
+   border-radius: 50%;
+   border: .5px solid #534D3F;
+   background: #A4997B;
+   color: #fff;
+   font-size: 14px;
+   text-align: center;
+   display: inline-block;
+}
+
+.projects-process ol#numbers li:nth-of-type(even)::before {
+   background: #D8BC8C;
+}
+
 /* ------ CONTACT ------ */
 section.contact-page {
    flex-direction: column;

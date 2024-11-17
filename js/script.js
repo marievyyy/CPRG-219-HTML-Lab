@@ -58,6 +58,20 @@ document.addEventListener("DOMContentLoaded", function () {
       });
    }
 
+   // ----- Fruity Loops
+   const olList = document.getElementById("numbers");
+   if (olList) {
+      for (let i = 1; i <= 12; i++) {
+         const listItem = document.createElement("li");
+
+         // Set the text content of the <li> based on whether the index is even or odd
+         listItem.textContent = i % 2 === 0 ? "even" : "odd";
+         listItem.classList.add(i % 2 === 0 ? "even" : "odd");
+
+         olList.appendChild(listItem);
+      }
+   }
+
 });
 
 

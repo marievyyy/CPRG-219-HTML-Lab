@@ -237,15 +237,28 @@ a.button+a.button {
    background-image: radial-gradient(circle, #7A725B 10%, transparent 10.5%);
    background-size: 5px 5px;
    clip-path: circle(50% at 50% 50%);
+   pointer-events: none;
+   z-index: -1;
 }
 
 .circle .circle--outer {
+   cursor: pointer;
+   border: 0;
    top: calc(50% - 50px);
    left: calc(50% - 50px);
    height: 100px;
    width: 100px;
    background-color: #D8BC8C;
+   color: #534D3F;
    border-radius: 50%;
+   font-family: inherit;
+   font-size: 13px;
+   transition: all 0.3s ease;
+}
+
+.circle .circle--outer:hover {
+   background-color: #534D3F;
+   color: #D8BC8C;
 }
 
 /* ------ ABOUT ------ */

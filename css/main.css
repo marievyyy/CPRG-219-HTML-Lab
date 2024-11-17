@@ -418,6 +418,10 @@ table.projects td div.project-details {
    -webkit-text-stroke-color: #1F1305;
 }
 
+.projects-process ol:first-of-type {
+   margin-bottom: 50px;
+}
+
 .projects-process ol li {
    margin-bottom: 15px;
    text-transform: uppercase;

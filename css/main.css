@@ -142,6 +142,24 @@ section.contact-page {
    border-right: 0.5px solid #A4997B;
 }
 
+.page-hero-content #greeting {
+   color: #D8BC8C;
+   font-size: 14px;
+   margin-bottom: 30px;
+}
+
+.page-hero-content #greeting.morning {
+   color: #D8BC8C;
+}
+
+.page-hero-content #greeting.afternoon {
+   color: #A4997B;
+}
+
+.page-hero-content #greeting.evening {
+   color: #1F1305;
+}
+
 .page-hero-header h2 {
    font-family: "Kalnia", serif;
    font-weight: 700;
